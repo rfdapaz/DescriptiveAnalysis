@@ -1,0 +1,85 @@
+# Estrutura  de Dados e Notação
+
+Os dados normalmente são dispostos em tabelas ou planilhas, de modo que em cada coluna podem ser observados os valores assumidos por uma dada variável. Assim, nas linhas da tabela são dispostos os valores observados para todas as variáveis em uma unidade amostral ou indivíduo. Essa estrutura  permite que os dados sejam analisados por meio de diversos software, tais como  R [@R-base], Python [@python], Library Office [@libraryoffice], entre outros. No entanto, outras estruturas podem ser requeridas, dependendo das rotinas  a serem utilizadas.
+
+A Tabela  \@ref(tab:dadosest) mostra as dez primeiras linhas e sete primeiras colunas do conjunto de dados coletados por meio de questionários respondidos por estudantes ingressantes nos cursos de engenharias do Campus da UFC de Russas no ano de 2020. Os discentes responderam as seguintes perguntas:
+
+- Qual o local de residência no ato da matrícula no curso que está matriculado?
+
+- Qual o seu sexo?
+
+- Qual é sua idade, peso  e altura?
+
+- Qual curso está matriculado?
+
+- Qual foi a sua nota no ENEM?
+
+- Com qual idade decidiu fazer o curso que está cursando?
+
+- Numa escala de 0 a 5, onde 0 significa nada e 5 significa muito, com que intensidade você gosta da área de exatas?
+
+
+Note que a tabela mostra valores para as varáveis "local de residência dos estudantes", "sexo", idade, peso, curso, nota, idade de decisão pelo curso e gosto pelas área de exatas. Cada uma dessas variáveis foram observadas nos indivíduos entrevistados, os alunos. Assim, essas características são dispostas  nas colunas da tabela e os indivíduos (que são anônimos) estão dispostos nas linhas da tabela.
+
+
+```{r dadosest, tidy=FALSE}
+if(!require(knitr)) install.packages("knitr");require(knitr) 
+## no código abaixo, se os dados estiverem em um diretório do computador, bastar fornecer o caminho com barras invertidas, seguido do nome do arquivo, em vez do link, exemplo "C:/user/meus documentos/DataEstudat.csv"
+DadosEstudante<-read.table("https://raw.githubusercontent.com/rfdapaz/DadosAME/master/DataEstudat.csv",sep=',', head=TRUE, encoding = "UTF-8", check.names=FALSE) 
+
+knitr::kable(
+  head(DadosEstudante[,1:7], 10), caption = 'Dados fornecidos por estudantes ingressantes do ano de 2020 nos cursos de engenharias do Campus da UFC de Russas.',
+  booktabs = TRUE
+)
+```
+
+
+## Notação
+
+Uma variável qualquer é geralmente denotada por uma letra maiúscula, exemplo, $X$, $Y$, etc. Um valor observado é denotado pela mesma letra, mas minúscula, exemplo, se a variável é denotada por $X$, então um valor observado dessa variável será denotado por $x$. Se for necessário representar uma sequência de $n$ valores observados da variável $X$, essa serquência será denota por $x_1, x_2, \cdots, x_n$. Uma sequência infinita de valores observados da variável $X$ será denotada por  $x_1, x_2, \cdots$. Caso tenha sido observados dados a partir de todos os elementos da população, o tamanho da sequência de dados observados será denotado por $N$. 
+
+Resumidamente tem-se:
+
+- $X$, $Y$, etc, representa variáveis;
+
+- $x$  e   $x_1, x_2, \cdots, x_n$ representam um valor observado e uma sequência de tamanho $n$ de valores observados de $X$, respectivamente;
+
+- $n$ representa a quantidade de elementos na amostra usada para obter os valores observados e
+
+- $N$ representa a quantidade de elementos na população.
+
+__Observações__
+
+1. Após a obtenção dos dados, é comum que seja feita uma crítica dos valores obtidos, pois erro de medições e equivocos na anotação de valores podem ocorrer. Assim, é comum que sejam passados "filtros" na tentativa de detectar esses valores. 
+
+2. Os dados após feita essa crítica é denominado __dados brutos__.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

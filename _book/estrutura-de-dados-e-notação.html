@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Estrutura de Dados e Notação | Estatística Descritiva</title>
+  <meta name="description" content="2 Estrutura de Dados e Notação | Estatística Descritiva" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Estrutura de Dados e Notação | Estatística Descritiva" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Estrutura de Dados e Notação | Estatística Descritiva" />
+  
+  
+  
+
+<meta name="author" content="Rosineide da Paz" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="referências.html"/>
+<script src="libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Rosineide da Paz</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Análise Exploratória dos Dados</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#variavel"><i class="fa fa-check"></i><b>1.1</b> Variável</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#tipos-de-variáveis"><i class="fa fa-check"></i><b>1.1.1</b> Tipos de Variáveis</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#escala-de-likert-para-variáveis-qualitativas"><i class="fa fa-check"></i><b>1.2</b> Escala de Likert para variáveis qualitativas</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="estrutura-de-dados-e-notação.html"><a href="estrutura-de-dados-e-notação.html"><i class="fa fa-check"></i><b>2</b> Estrutura de Dados e Notação</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="estrutura-de-dados-e-notação.html"><a href="estrutura-de-dados-e-notação.html#notação"><i class="fa fa-check"></i><b>2.1</b> Notação</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="referências.html"><a href="referências.html"><i class="fa fa-check"></i>Referências</a></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org/connect/#/content/listing?filter=min_role:editor&filter=content_type:all" target="blank"> Todos os contúdos </a></li>
+<li><a href="https://www.youtube.com/channel/UCoG968VAE6meoSQn3_Kaoag/videos" target="blank"> Canal do youtube</a></li>
+<li><a href="http://www.campusrussas.ufc.br/"  target="blank">UFC - Campus de Russas</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Estatística Descritiva</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="estrutura-de-dados-e-notação" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Estrutura de Dados e Notação</h1>
+<p>Os dados normalmente são dispostos em tabelas ou planilhas, de modo que em cada coluna podem ser observados os valores assumidos por uma dada variável. Assim, nas linhas da tabela são dispostos os valores observados para todas as variáveis em uma unidade amostral ou indivíduo. Essa estrutura permite que os dados sejam analisados por meio de diversos software, tais como R <span class="citation">(<a href="#ref-R-base" role="doc-biblioref">R Core Team 2020</a>)</span>, Python <span class="citation">(<a href="#ref-python" role="doc-biblioref">Van Rossum and Drake Jr 1995</a>)</span>, Library Office <span class="citation">(<a href="#ref-libraryoffice" role="doc-biblioref">Library Office Team 2020</a>)</span>, entre outros. No entanto, outras estruturas podem ser requeridas, dependendo das rotinas a serem utilizadas.</p>
+<p>A Tabela <a href="estrutura-de-dados-e-notação.html#tab:dadosest">2.1</a> mostra as dez primeiras linhas e sete primeiras colunas do conjunto de dados coletados por meio de questionários respondidos por estudantes ingressantes nos cursos de engenharias do Campus da UFC de Russas no ano de 2020. Os discentes responderam as seguintes perguntas:</p>
+<ul>
+<li><p>Qual o local de residência no ato da matrícula no curso que está matriculado?</p></li>
+<li><p>Qual o seu sexo?</p></li>
+<li><p>Qual é sua idade, peso e altura?</p></li>
+<li><p>Qual curso está matriculado?</p></li>
+<li><p>Qual foi a sua nota no ENEM?</p></li>
+<li><p>Com qual idade decidiu fazer o curso que está cursando?</p></li>
+<li><p>Numa escala de 0 a 5, onde 0 significa nada e 5 significa muito, com que intensidade você gosta da área de exatas?</p></li>
+</ul>
+<p>Note que a tabela mostra valores para as varáveis “local de residência dos estudantes,” “sexo,” idade, peso, curso, nota, idade de decisão pelo curso e gosto pelas área de exatas. Cada uma dessas variáveis foram observadas nos indivíduos entrevistados, os alunos. Assim, essas características são dispostas nas colunas da tabela e os indivíduos (que são anônimos) estão dispostos nas linhas da tabela.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="estrutura-de-dados-e-notação.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">require</span>(knitr)) <span class="fu">install.packages</span>(<span class="st">&quot;knitr&quot;</span>);<span class="fu">require</span>(knitr) </span></code></pre></div>
+<pre><code>## Loading required package: knitr</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="estrutura-de-dados-e-notação.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="do">## no código abaixo, se os dados estiverem em um diretório do computador, bastar fornecer o caminho com barras invertidas, seguido do nome do arquivo, em vez do link, exemplo &quot;C:/user/meus documentos/DataEstudat.csv&quot;</span></span>
+<span id="cb3-2"><a href="estrutura-de-dados-e-notação.html#cb3-2" aria-hidden="true" tabindex="-1"></a>DadosEstudante<span class="ot">&lt;-</span><span class="fu">read.table</span>(<span class="st">&quot;https://raw.githubusercontent.com/rfdapaz/DadosAME/master/DataEstudat.csv&quot;</span>,<span class="at">sep=</span><span class="st">&#39;,&#39;</span>, <span class="at">head=</span><span class="cn">TRUE</span>, <span class="at">encoding =</span> <span class="st">&quot;UTF-8&quot;</span>, <span class="at">check.names=</span><span class="cn">FALSE</span>) </span>
+<span id="cb3-3"><a href="estrutura-de-dados-e-notação.html#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="estrutura-de-dados-e-notação.html#cb3-4" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
+<span id="cb3-5"><a href="estrutura-de-dados-e-notação.html#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(DadosEstudante[,<span class="dv">1</span><span class="sc">:</span><span class="dv">7</span>], <span class="dv">10</span>), <span class="at">caption =</span> <span class="st">&#39;Dados fornecidos por estudantes ingressantes do ano de 2020 nos cursos de engenharias do Campus da UFC de Russas.&#39;</span>,</span>
+<span id="cb3-6"><a href="estrutura-de-dados-e-notação.html#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">booktabs =</span> <span class="cn">TRUE</span></span>
+<span id="cb3-7"><a href="estrutura-de-dados-e-notação.html#cb3-7" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<table>
+<caption><span id="tab:dadosest">Tabela 2.1: </span>Dados fornecidos por estudantes ingressantes do ano de 2020 nos cursos de engenharias do Campus da UFC de Russas.</caption>
+<thead>
+<tr class="header">
+<th align="right"></th>
+<th align="left">Cidade</th>
+<th align="left">UF</th>
+<th align="left">Sexo</th>
+<th align="right">Idade</th>
+<th align="right">Peso</th>
+<th align="right">Altura</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">Limoeiro do Norte</td>
+<td align="left">CE</td>
+<td align="left">Feminino</td>
+<td align="right">17</td>
+<td align="right">40.2</td>
+<td align="right">1.61</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="left">Aracati</td>
+<td align="left">CE</td>
+<td align="left">Feminino</td>
+<td align="right">17</td>
+<td align="right">100.0</td>
+<td align="right">1.60</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="left">Limoeiro do Norte</td>
+<td align="left">CE</td>
+<td align="left">Masculino</td>
+<td align="right">19</td>
+<td align="right">60.0</td>
+<td align="right">1.65</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="left">Quixadá</td>
+<td align="left">CE</td>
+<td align="left">Masculino</td>
+<td align="right">20</td>
+<td align="right">80.3</td>
+<td align="right">1.73</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="left">Russas</td>
+<td align="left">CE</td>
+<td align="left">Masculino</td>
+<td align="right">17</td>
+<td align="right">59.0</td>
+<td align="right">1.68</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="left">Limoeiro do Norte</td>
+<td align="left">CE</td>
+<td align="left">Masculino</td>
+<td align="right">19</td>
+<td align="right">75.0</td>
+<td align="right">1.80</td>
+</tr>
+<tr class="odd">
+<td align="right">7</td>
+<td align="left">Jaguaribe</td>
+<td align="left">CE</td>
+<td align="left">Masculino</td>
+<td align="right">18</td>
+<td align="right">63.0</td>
+<td align="right">1.75</td>
+</tr>
+<tr class="even">
+<td align="right">8</td>
+<td align="left">Jaguaruana</td>
+<td align="left">CE</td>
+<td align="left">Feminino</td>
+<td align="right">18</td>
+<td align="right">57.0</td>
+<td align="right">1.53</td>
+</tr>
+<tr class="odd">
+<td align="right">9</td>
+<td align="left">Fortaleza</td>
+<td align="left">CE</td>
+<td align="left">Feminino</td>
+<td align="right">19</td>
+<td align="right">74.0</td>
+<td align="right">1.65</td>
+</tr>
+<tr class="even">
+<td align="right">10</td>
+<td align="left">Russas</td>
+<td align="left">CE</td>
+<td align="left">Masculino</td>
+<td align="right">20</td>
+<td align="right">73.0</td>
+<td align="right">1.70</td>
+</tr>
+</tbody>
+</table>
+<div id="notação" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Notação</h2>
+<p>Uma variável qualquer é geralmente denotada por uma letra maiúscula, exemplo, <span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span>, etc. Um valor observado é denotado pela mesma letra, mas minúscula, exemplo, se a variável é denotada por <span class="math inline">\(X\)</span>, então um valor observado dessa variável será denotado por <span class="math inline">\(x\)</span>. Se for necessário representar uma sequência de <span class="math inline">\(n\)</span> valores observados da variável <span class="math inline">\(X\)</span>, essa serquência será denota por <span class="math inline">\(x_1, x_2, \cdots, x_n\)</span>. Uma sequência infinita de valores observados da variável <span class="math inline">\(X\)</span> será denotada por <span class="math inline">\(x_1, x_2, \cdots\)</span>. Caso tenha sido observados dados a partir de todos os elementos da população, o tamanho da sequência de dados observados será denotado por <span class="math inline">\(N\)</span>.</p>
+<p>Resumidamente tem-se:</p>
+<ul>
+<li><p><span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span>, etc, representa variáveis;</p></li>
+<li><p><span class="math inline">\(x\)</span> e <span class="math inline">\(x_1, x_2, \cdots, x_n\)</span> representam um valor observado e uma sequência de tamanho <span class="math inline">\(n\)</span> de valores observados de <span class="math inline">\(X\)</span>, respectivamente;</p></li>
+<li><p><span class="math inline">\(n\)</span> representa a quantidade de elementos na amostra usada para obter os valores observados e</p></li>
+<li><p><span class="math inline">\(N\)</span> representa a quantidade de elementos na população.</p></li>
+</ul>
+<p><strong>Observações</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Após a obtenção dos dados, é comum que seja feita uma crítica dos valores obtidos, pois erro de medições e equivocos na anotação de valores podem ocorrer. Assim, é comum que sejam passados “filtros” na tentativa de detectar esses valores.</p></li>
+<li><p>Os dados após feita essa crítica é denominado <strong>dados brutos</strong>.</p></li>
+</ol>
+
+</div>
+</div>
+<h3>Referências</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-libraryoffice" class="csl-entry">
+Library Office Team. 2020. <em><span>Library Office: The Document Foundation</span></em>. Alemanha: Library Office , DF. <a href="https://pt-br.libreoffice.org/">https://pt-br.libreoffice.org/</a>.
+</div>
+<div id="ref-R-base" class="csl-entry">
+R Core Team. 2020. <em>R: A Language and Environment for Statistical Computing</em>. Vienna, Austria: R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>.
+</div>
+<div id="ref-python" class="csl-entry">
+Van Rossum, Guido, and Fred L Drake Jr. 1995. <em>Python Reference Manual</em>. Centrum voor Wiskunde en Informatica Amsterdam.
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="referências.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection",
+"download": ["pdf", "epub"]
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

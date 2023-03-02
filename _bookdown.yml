@@ -1,4 +1,6 @@
 delete_merged_file: true
 language:
   ui:
-    chapter_name: "Chapter "
+    edit: Edit
+    chapter_name: ''
+    appendix_name: ''

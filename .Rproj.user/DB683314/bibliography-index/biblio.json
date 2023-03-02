@@ -1,7 +1,441 @@
 {
     "sources": [
         {
-            "URL": "http://yihui.org/knitr/",
+            "author": [
+                {
+                    "family": "Allen",
+                    "given": "I Elaine"
+                },
+                {
+                    "family": "Seaman",
+                    "given": "Christopher A"
+                }
+            ],
+            "container-title": "Quality progress",
+            "id": "allen2007likert",
+            "issue": "7",
+            "issued": {
+                "date-parts": [
+                    [
+                        2007
+                    ]
+                ]
+            },
+            "page": "64-65",
+            "title": "Likert scales and data analyses",
+            "type": "article-journal",
+            "volume": "40"
+        },
+        {
+            "author": [
+                {
+                    "family": "Scott",
+                    "given": "David W"
+                }
+            ],
+            "container-title": "Wiley Interdisciplinary Reviews: Computational Statistics",
+            "id": "scott2009sturges",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2009
+                    ]
+                ]
+            },
+            "page": "303-306",
+            "publisher": "Wiley Online Library",
+            "title": "Sturges’ rule",
+            "type": "article-journal",
+            "volume": "1"
+        },
+        {
+            "author": [
+                {
+                    "family": "Van Rossum",
+                    "given": "Guido"
+                },
+                {
+                    "family": "Drake Jr",
+                    "given": "Fred L"
+                }
+            ],
+            "id": "python",
+            "issued": {
+                "date-parts": [
+                    [
+                        1995
+                    ]
+                ]
+            },
+            "publisher": "Centrum voor Wiskunde en Informatica Amsterdam",
+            "title": "Python reference manual",
+            "type": "book"
+        },
+        {
+            "URL": "http://www.rstudio.com/",
+            "author": [
+                {
+                    "literal": "RStudio Team"
+                }
+            ],
+            "id": "rstudio",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "publisher": "RStudio, PBC",
+            "publisher-place": "Boston, MA, acessado em 05 - 07 - 2020",
+            "title": "RStudio: Integrated development environment for r",
+            "title-short": "RStudio",
+            "type": "book"
+        },
+        {
+            "URL": "https://pt-br.libreoffice.org/",
+            "author": [
+                {
+                    "literal": "Library Office Team"
+                }
+            ],
+            "id": "libraryoffice",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "publisher": "Library Office , DF",
+            "publisher-place": "Alemanha",
+            "title": "Library Office: The Document Foundation",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Morettin",
+                    "given": "WILTON OLIVEIRA",
+                    "suffix": "Pedro Alberto e BUSSAB"
+                }
+            ],
+            "id": "bussab",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "publisher": "Editora Saraiva",
+            "title": "Estatı́stica básica",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Larson",
+                    "given": "Ron"
+                },
+                {
+                    "family": "Farber",
+                    "given": "Betsy"
+                },
+                {
+                    "dropping-particle": "traducão técnica",
+                    "family": "Patarra",
+                    "given": "Cyro;"
+                }
+            ],
+            "id": "larson2004estatistica",
+            "issued": {
+                "date-parts": [
+                    [
+                        2004
+                    ]
+                ]
+            },
+            "publisher": "Prentice Hall",
+            "title": "Estatı́stica aplicada",
+            "type": "book"
+        },
+        {
+            "URL": "https://books.google.com.br/books?id=BxERQgAACAAJ",
+            "author": [
+                {
+                    "family": "Morettin",
+                    "given": "L. G."
+                }
+            ],
+            "id": "morettin2010estatistica",
+            "issued": {
+                "date-parts": [
+                    [
+                        2010
+                    ]
+                ]
+            },
+            "publisher": "MAKRON",
+            "title": "Estatistica basica: Probabilidade e inferência : Volume único",
+            "title-short": "Estatistica basica",
+            "type": "book"
+        },
+        {
+            "URL": "https://books.google.com.br/books?id=ZKXtwsmyPFcC",
+            "author": [
+                {
+                    "family": "Ross",
+                    "given": "S."
+                }
+            ],
+            "id": "ross2009probabilidade",
+            "issued": {
+                "date-parts": [
+                    [
+                        2009
+                    ]
+                ]
+            },
+            "publisher": "Bookman",
+            "title": "Probabilidade: Um curso moderno com aplicações",
+            "title-short": "Probabilidade",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "WILLIAM",
+                    "given": "J Stevenson"
+                }
+            ],
+            "id": "william1981estatistica",
+            "issued": {
+                "date-parts": [
+                    [
+                        1981
+                    ]
+                ]
+            },
+            "publisher": "São Paulo: Harper & Row do Brasil",
+            "title": "Estatı́stica aplicada à administração",
+            "type": ""
+        },
+        {
+            "author": [
+                {
+                    "family": "Barbetta",
+                    "given": "Pedro Alberto"
+                },
+                {
+                    "family": "Reis",
+                    "given": "Marcelo Menezes"
+                },
+                {
+                    "family": "Bornia",
+                    "given": "Antonio Cezar"
+                }
+            ],
+            "id": "barbetta2004",
+            "issued": {
+                "date-parts": [
+                    [
+                        2004
+                    ]
+                ]
+            },
+            "publisher": "Atlas São Paulo",
+            "title": "Estatı́stica: Para cursos de engenharia e informática",
+            "title-short": "Estatı́stica",
+            "type": "book",
+            "volume": "3"
+        },
+        {
+            "author": [
+                {
+                    "family": "Hazzan",
+                    "given": "Samuel"
+                }
+            ],
+            "id": "hazzan2013",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013
+                    ]
+                ]
+            },
+            "publisher": "Atual, São Paulo - SP",
+            "title": "Fundamentos de matemática elementar, 5, combinatória, probabilidade",
+            "type": "book"
+        },
+        {
+            "URL": "https://www.R-project.org/",
+            "author": [
+                {
+                    "literal": "R Core Team"
+                }
+            ],
+            "id": "R-base",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "publisher": "R Foundation for Statistical Computing",
+            "publisher-place": "Vienna, Austria",
+            "title": "R: A language and environment for statistical computing",
+            "title-short": "R",
+            "type": "book"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=bookdown",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "id": "R-bookdown",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "note": "R package version 0.20",
+            "title": "Bookdown: Authoring books and technical documents with r markdown",
+            "title-short": "Bookdown",
+            "type": "book"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=DiagrammeR",
+            "author": [
+                {
+                    "family": "Iannone",
+                    "given": "Richard"
+                }
+            ],
+            "id": "R-DiagrammeR",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "note": "R package version 1.0.6.1",
+            "title": "DiagrammeR: Graph/network visualization",
+            "title-short": "DiagrammeR",
+            "type": "book"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=knitr",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "id": "R-knitr",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "note": "R package version 1.29",
+            "title": "Knitr: A general-purpose package for dynamic report generation in r",
+            "title-short": "Knitr",
+            "type": "book"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=rmarkdown",
+            "author": [
+                {
+                    "family": "Allaire",
+                    "given": "JJ"
+                },
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                },
+                {
+                    "family": "McPherson",
+                    "given": "Jonathan"
+                },
+                {
+                    "family": "Luraschi",
+                    "given": "Javier"
+                },
+                {
+                    "family": "Ushey",
+                    "given": "Kevin"
+                },
+                {
+                    "family": "Atkins",
+                    "given": "Aron"
+                },
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                },
+                {
+                    "family": "Cheng",
+                    "given": "Joe"
+                },
+                {
+                    "family": "Chang",
+                    "given": "Winston"
+                },
+                {
+                    "family": "Iannone",
+                    "given": "Richard"
+                }
+            ],
+            "id": "R-rmarkdown",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "note": "R package version 2.3",
+            "title": "Rmarkdown: Dynamic documents for r",
+            "title-short": "Rmarkdown",
+            "type": "book"
+        },
+        {
+            "URL": "https://github.com/rstudio/bookdown",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "id": "bookdown2016",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "note": "ISBN 978-1138700109",
+            "publisher": "Chapman; Hall/CRC",
+            "publisher-place": "Boca Raton, Florida",
+            "title": "Bookdown: Authoring books and technical documents with R markdown",
+            "title-short": "Bookdown",
+            "type": "book"
+        },
+        {
+            "URL": "https://yihui.org/knitr/",
             "author": [
                 {
                     "family": "Xie",
@@ -9,7 +443,7 @@
                 }
             ],
             "edition": "2nd",
-            "id": "xie2015",
+            "id": "knitr2015",
             "issued": {
                 "date-parts": [
                     [
@@ -22,10 +456,78 @@
             "publisher-place": "Boca Raton, Florida",
             "title": "Dynamic documents with R and knitr",
             "type": "book"
+        },
+        {
+            "URL": "http://www.crcpress.com/product/isbn/9781466561595",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "container-title": "Implementing reproducible computational research",
+            "editor": [
+                {
+                    "family": "Stodden",
+                    "given": "Victoria"
+                },
+                {
+                    "family": "Leisch",
+                    "given": "Friedrich"
+                },
+                {
+                    "family": "Peng",
+                    "given": "Roger D."
+                }
+            ],
+            "id": "knitr2014",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014
+                    ]
+                ]
+            },
+            "note": "ISBN 978-1466561595",
+            "publisher": "Chapman; Hall/CRC",
+            "title": "Knitr: A comprehensive tool for reproducible research in R",
+            "title-short": "Knitr",
+            "type": "chapter"
+        },
+        {
+            "URL": "https://bookdown.org/yihui/rmarkdown",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                },
+                {
+                    "family": "Allaire",
+                    "given": "J. J."
+                },
+                {
+                    "family": "Grolemund",
+                    "given": "Garrett"
+                }
+            ],
+            "id": "rmarkdown2018",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "note": "ISBN 9781138359338",
+            "publisher": "Chapman; Hall/CRC",
+            "publisher-place": "Boca Raton, Florida",
+            "title": "R markdown: The definitive guide",
+            "title-short": "R markdown",
+            "type": "book"
         }
     ],
     "project_biblios": [
-        "book.bib",
-        "packages.bib"
+        "references.bib",
+        "refpack.bib"
     ]
 }

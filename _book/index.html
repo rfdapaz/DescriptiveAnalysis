@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Estatística Descritiva</title>
+  <meta name="description" content="Estatística Descritiva" />
+  <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Estatística Descritiva" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Estatística Descritiva" />
+  
+  
+  
+
+<meta name="author" content="Rosineide da Paz" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="estrutura-de-dados-e-notação.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Rosineide da Paz</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Análise Exploratória dos Dados</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#variavel"><i class="fa fa-check"></i><b>1.1</b> Variável</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#tipos-de-variáveis"><i class="fa fa-check"></i><b>1.1.1</b> Tipos de Variáveis</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#escala-de-likert-para-variáveis-qualitativas"><i class="fa fa-check"></i><b>1.2</b> Escala de Likert para variáveis qualitativas</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="estrutura-de-dados-e-notação.html"><a href="estrutura-de-dados-e-notação.html"><i class="fa fa-check"></i><b>2</b> Estrutura de Dados e Notação</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="estrutura-de-dados-e-notação.html"><a href="estrutura-de-dados-e-notação.html#notação"><i class="fa fa-check"></i><b>2.1</b> Notação</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="referências.html"><a href="referências.html"><i class="fa fa-check"></i>Referências</a></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org/connect/#/content/listing?filter=min_role:editor&filter=content_type:all" target="blank"> Todos os contúdos </a></li>
+<li><a href="https://www.youtube.com/channel/UCoG968VAE6meoSQn3_Kaoag/videos" target="blank"> Canal do youtube</a></li>
+<li><a href="http://www.campusrussas.ufc.br/"  target="blank">UFC - Campus de Russas</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Estatística Descritiva</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Estatística Descritiva</h1>
+<p class="author"><em>Rosineide da Paz</em></p>
+<p class="date"><em>02-03-2023</em></p>
+</div>
+<div id="análise-exploratória-dos-dados" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">1</span> Análise Exploratória dos Dados<a href="index.html#análise-exploratória-dos-dados" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Em qualquer análise estatística, deve-se, inicialmente, realizar uma análise exploratória dos dados, isso pode ser feito usando ferramentas da <strong>Estatística Descritiva</strong>. Nessa etapa da análise, procura-se obter a maior quantidade possível de informações a partir dos dados observados. Se a análise é realizada tendo como base uma amostra da população de interesse, é nessa fase que são obtidas as informações que podem dar ideia sobre qual modelo probabilístico pode descrever melhor o fenômeno investigado, assim pode-se ter uma ideia do modelo a ser utilizado na fase posterior da análise.</p>
+<div id="variavel" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Variável<a href="index.html#variavel" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Os dados são observações de fenômeno de interesse, a esses fenômenos damos o nome de <strong>variável</strong>. Assim, uma variável é um atributo, cujo valor pode variar de uma unidade de investigação para outra. Por exemplo, as unidades podem ser pessoas contaminadas por um vírus e a variável o tempo de recuperação após um determinado tipo de tratamento ser iniciado. Nesse caso, espera-se que o tempo de recuperação varie entre os indivíduos, ou unidades amostrais.</p>
+<p>Uma observação, ou resposta, é o valor assumido por uma variável em uma das unidades investigadas. A observação da variável em várias unidades dá origem aos dados observados.</p>
+<div class="example">
+<p><span id="exm:unnamed-chunk-3" class="example"><strong>Example 1.1  </strong></span>Exemplos de variáveis.</p>
+</div>
+<ul>
+<li>tempo de execução de um algoritmo em diferentes máquinas;</li>
+<li>rendimento das famílias de uma grande cidade;</li>
+<li>número de erros em pacotes de dados enviados por um servidor;</li>
+<li>número de clientes com a mesma dúvida em um site de suporte durante um período de tempo;</li>
+<li>opinião dos consumidores de um determinado produto (péssimo, regular, ótimo etc).</li>
+</ul>
+<div id="tipos-de-variáveis" class="section level3 hasAnchor" number="1.1.1">
+<h3><span class="header-section-number">1.1.1</span> Tipos de Variáveis<a href="index.html#tipos-de-variáveis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Podemos classificar variáveis em qualitativas e quantitativas. As variáveis <strong>qualitativas</strong> têm seus valores expressos por atributos, exprimindo alguma qualidade.</p>
+<p>As variáveis qualitativa podem ainda ser classificadas como <strong>nominais</strong> ou <strong>ordinais</strong>.</p>
+<p>Uma variável é nominal se os atributos que esta representa não têm uma ordenação, por exemplo, cor de cabelo, sexo de indivíduos etc, enquanto que as variáeis ordinais exprimem alguma ordenação, como por exemplo, opinião sobre a qualidade de um produto (péssimo, regular, ótimo).</p>
+<p>As variáveis <em>quantitativas</em> exprimem quantidades ou mensurações. Essas variáveis também podem ser classificadas em <strong>contínuas</strong> e <strong>discretas</strong>.</p>
+<p>Variável discreta assume valores em um conjunto enumerável (ou contável), por exemplo, número de carros que passam por um posto de pedágio em um intervalo de tempo.</p>
+<p>Uma variável é contínua quando assume valores em um conjunto não-enumerável, ou seja, em um intervalo da reta, por exemplo, alturas de pessoas em um determinado povoado. Veja um resumo dos tipos de variáveis no diagrama apresentado na Figura <a href="index.html#fig:diagram">1.1</a>, criado com o uso do pacote <span class="citation">(<a href="#ref-R-DiagrammeR" role="doc-biblioref">Iannone 2020</a>)</span>.</p>
+<div class="figure"><span style="display:block;" id="fig:diagram"></span>
+<img src="images/diagramaV.png" alt=": Classificação de vaiáveis." width="90%" />
+<p class="caption">
+Figure 1.1: : Classificação de vaiáveis.
+</p>
+</div>
+<p>Note que, na prática, em geral variáveis quantitativas contínuas são resultados de mensurações, enquanto variáveis quantitativas discretas são resultados de contagens. Portanto, para entender a natureza de uma variável, e classifica-la corretamente, deve-se entender o processo que a originou.</p>
+</div>
+</div>
+<div id="escala-de-likert-para-variáveis-qualitativas" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Escala de Likert para variáveis qualitativas<a href="index.html#escala-de-likert-para-variáveis-qualitativas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Variáveis qualitativas muitas vezes podem ser observadas usando a escala de Likert <span class="citation">(<a href="#ref-allen2007likert" role="doc-biblioref">Allen and Seaman 2007</a>)</span>. Essa escala pode ser uma boa alternativa aos dados categóricos, pois permite o uso de tecnicas para analise que não seriam possíveis de serem utilizadas em dados categóricos.</p>
+<p>Essa escala é principalmente utilizada em questionários para obter as preferências ou o grau de concordância do entrevistado com uma declaração ou conjunto de declarações. Essa é uma técnica de escala em que os entrevistados são solicitados a indicar seu nível de concordância com uma determinada declaração por meio de uma escala ordinal ou intervalar.</p>
+<div class="example">
+<p><span id="exm:unnamed-chunk-5" class="example"><strong>Example 1.2  </strong></span>Como um exemplo de variável que pode ser observada em uma escala Likert, suponha que é desejado saber o quanto um cliente está satisfeito com um atendimento. Neste caso, pode-se perguntar:</p>
+<p>em uma escala de 0 até 5, em que zero signigica muito insatisfeito e 5 muito satisfeito, qual é o seu grau de satisfação com esse atendimento?</p>
+<p>Para essa pergunta pode-se estabelecer valores intermediários (1, 2, 3 e 4), ou usar o intervalo de 0 até 5, em que a pessoa possa escolher qualquer valor no intervalo [0,5].</p>
+</div>
+
+</div>
+</div>
+<h3>Referências<a href="referências.html#referências" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-allen2007likert" class="csl-entry">
+Allen, I Elaine, and Christopher A Seaman. 2007. <span>“Likert Scales and Data Analyses.”</span> <em>Quality Progress</em> 40 (7): 64–65.
+</div>
+<div id="ref-R-DiagrammeR" class="csl-entry">
+Iannone, Richard. 2020. <em>DiagrammeR: Graph/Network Visualization</em>. <a href="https://CRAN.R-project.org/package=DiagrammeR">https://CRAN.R-project.org/package=DiagrammeR</a>.
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="estrutura-de-dados-e-notação.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection",
+"download": ["pdf", "epub"]
+}
+});
+});
+</script>
+
+</body>
+
+</html>
