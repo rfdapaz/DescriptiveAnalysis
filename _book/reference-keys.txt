@@ -1,10 +1,10 @@
 exm:unnamed-chunk-3
 fig:diagram
 exm:unnamed-chunk-5
+tab:dadosest
 análise-exploratória-dos-dados
 variavel
 tipos-de-variáveis
 escala-de-likert-para-variáveis-qualitativas
 estrutura-de-dados-e-notação
 notação
-tab:dadosest
